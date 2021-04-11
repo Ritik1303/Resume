@@ -1,0 +1,283 @@
+body{
+    margin:0px auto;
+    width: 100%;
+	font-family: 'Merriweather', serif;
+}
+nav ul li {
+    list-style-type:none;
+    float: left;
+    padding-right: 2.5em;/* (px,em,%),pt,cm */
+    color:white;
+}
+nav ul{
+    float: right;   
+}
+nav{
+    width: 100%;
+    height: 50px;
+    background-color: #aa4a30;
+    position: fixed;
+}
+nav ul li a{
+	font-size: 24px;
+	text-decoration: none;
+	color: white ;
+}
+nav ul li a:hover {
+  background: #87431d;
+}
+section{
+    background-color:#edcfa9
+}
+.home{
+    background-color: #e89f71;
+    text-align: center;
+    font-size:48px;
+    color:#ffffff;
+    display: table;
+    height: 100vh;
+    width: 100%;
+}
+.inner{
+    display: table-cell;
+    vertical-align: middle;
+}
+.home .inner img{
+	margin-top: 70px;
+    border-radius: 100%;
+    width:250px;
+    height: auto;
+}
+.home .inner h1, .home .inner h2{
+	font-family: 'Merriweather', serif;
+}
+.about{
+    background-image: url('https://st2.depositphotos.com/5044661/10513/v/950/depositphotos_105138180-stock-illustration-various-colored-dots-connected-with.jpg');
+    display: table;
+    height: 100vh;
+    width:100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.about .inner{
+    display: table-cell;
+    float: left;
+    vertical-align: middle;
+    width: 80%;
+    padding-top: 75px;
+    padding-left: 50px;
+}
+.about .inner h1, .about .inner h2{
+	margin-bottom: -25px;
+    font-size: 42px;;
+    color: black;
+    font-weight: 600;
+    font-family: 'Merriweather', serif;
+
+
+}
+.about .inner p{
+	font-weight: 900;
+}
+.about .inner p, .about .inner h2, .about .inner h3{
+    	font-size: 24px;
+        color: black;
+        line-height: 30px;
+        font-family: 'Merriweather', serif;
+        font-weight: 900;
+}
+.education{
+	background-color: chocolate;
+	display: table;
+	height: 100vh;
+	width: 100%;
+}
+.education .inner{
+	padding: 50px;
+}
+.education h1, .hobbies h1, .skills h1, .contact h1, .certificates h1, .workshops h1{
+	font-size: 42px;
+}
+.education .inner div, .hobbies .inner div, .skills .inner div, .contact .inner div{
+	width: 30%;
+	margin-left:5px;
+	margin-right: 5px;
+	float: left;
+	text-align: center;
+}
+.certificates .inner , .workshops .inner {
+	width: 100%;
+	margin-left:5px;
+	margin-right: 5px;
+	float: left;
+	text-align: left;
+	}
+
+.education .inner  div p , .hobbies .inner div p, .skills .inner div ul li, .contact .inner div p{
+	font-size: 26px;
+}
+.certificates .inner ul li, .workshops .inner ul li{
+	font-size: 22px;
+	line-height: 40px;
+}
+.education .inner  h2, .education .inner h3, .hobbies .inner div p{
+	font-size: 18px;
+	margin-left: 80px;
+}
+.education .inner div img, .hobbies .inner div img{
+	margin-left: 60px;
+	width: 350px;
+	height: 250px;
+}
+.hobbies, .skills, .contact, .certificates, .workshops{
+	display: table;
+	height: 100vh;
+	width: 100%;
+}
+.hobbies{
+	    background-color: #e89f71;
+
+}
+.hobbies .inner {
+	padding: 50px;
+}
+.skills{
+	background-image: url('https://img.wallpapersafari.com/desktop/1536/864/93/76/bJzKjW.jpg');
+	 width:100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.certificates{
+	background-image: url('https://www.vmware.com/content/dam/digitalmarketing/vmware/en/images/professional-services/certification/thumbnails/vmw-trust-icon.png');
+	width:100%;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.workshops {
+	background-color: chocolate;
+}
+.skills .inner{
+	color: white;
+	padding: 50px;
+}
+.skills .inner div ul li{
+	list-style-type: none;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.contact .inner{
+	text-align: center;
+}
+.contact .inner p{
+	font-size: 30px;
+}
+.contact .inner p a{
+	text-decoration: none;
+	color: black;
+	padding: 50px;
+	margin: 50px;
+}
+/* responsive*/
+@media(min-width: 320px)and (max-width: 767px){
+
+	.home .inner img{
+		padding-top: 75px;
+	}
+	.about .inner{
+		width: 90%;
+		padding: 25px;
+	}
+	.about .inner p{
+
+		font-size: 18px;
+		text-align: justify-all;
+	}
+	.education .inner div, .hobbies .inner div, .skills .inner div{
+		width: 100%;
+	}
+	.hobbies .inner div{
+		border-bottom: :5px solid black;
+	}
+	.skills .inner div ul{
+		font-size: 12px;
+	}
+	nav ul li a{
+		font-size: 16px;
+		float:none;
+		font-family: 'Merriweather', serif;
+	}
+	nav ul li{
+		float: left;
+		margin: 0px;
+	}
+
+	nav ul{
+		float: left;
+		margin:0px;
+	}
+	.home{
+    	background-color: #e89f71;
+    	text-align: center;
+    	color:#ffffff;
+   	 	display: table;
+    	height: 100vh;
+    	width: 540px;
+	}
+	.inner{
+    	display: table-cell;
+    	vertical-align: middle;
+	}
+	.home .inner img{
+    	width:350px;
+    	height: auto;
+	}
+	.home .inner h1{
+		font-family: 'Merriweather', serif;
+		font-weight: 300;
+	}
+	.about{
+		width:540px;
+		background-position:0px;
+		background-size: cover;
+	}
+	.about .inner p{
+		font-size: 25px;
+		font-family: 'Merriweather', serif;
+
+	}
+	.education, .hobbies, .skills, .contact, .certificates, .workshops{
+		width: 540px;
+	}
+	.education .inner div img, .hobbies .inner div img{
+		margin-left: -50px;
+		width: 350px;
+		height: 250px;
+	}
+	.education .inner  h2, .education .inner h3, .hobbies .inner div p{
+		font-size: 18px;
+		margin-left: -50px;
+	}
+	.skills .inner div ul li{
+		text-align: left;
+		list-style-type: disc;
+
+	}
+	.contact .inner p{
+		font-size: 20px;
+		margin-left: -50px;
+		line-height: 50px;
+	}
+	.contact .inner h1{
+		font-size: 36px;
+	}
+	.contact .inner p a{
+		text-align: center;
+	}
+
+}
+@media(min-width: 768px)and(max-width: 1023px){
+
+}
+@media(min-width: 1024px) and(max-width: 1439px){
+
+}

@@ -1,2 +1,1 @@
-# Resume
-Ritik Mrinal
+# ResumeMy
